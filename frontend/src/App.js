@@ -5,8 +5,8 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { themeSettings } from "./theme";
 
-import Navbar from './components/Navbar';
 import Homepage from "./pages/Homepage";
+import Function from "./pages/function_generator";
 
 function App() {
 
@@ -19,7 +19,9 @@ function App() {
         
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/function_generator" element={<Function />} />
         </Routes>
+
       </ThemeProvider>
     </>
   );
