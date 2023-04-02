@@ -9,11 +9,11 @@
     "start": "node server.js",
     "frontend": "npm start --prefix ./frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\""
-
   },
   "author": "Tawhid Monowar",
   "license": "MIT",
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
     "body-parser": "^1.20.2",
     "colors": "^1.4.0",
     "concurrently": "^8.0.1",

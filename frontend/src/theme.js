@@ -26,7 +26,13 @@ export const colorTokens = {
       800: "#51a763",
       900: "#4da05e",
     },
+    dark_theme: {
+      0: "#0e1117",
+      1: "#e5e5e5",
+    },
   };
+
+
   
   export const themeSettings = (mode) => {
     return {
@@ -44,7 +50,7 @@ export const colorTokens = {
           light: colorTokens.grey[50],
         },
         background: {
-          default: colorTokens.grey[10],
+          default: colorTokens.dark_theme[0],
           alt: colorTokens.grey[0],
         },
       },
