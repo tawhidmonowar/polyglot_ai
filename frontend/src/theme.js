@@ -56,9 +56,6 @@ export const colorTokens = {
       },
       typography: {
         fontSize: 12,
-        h1: {
-          fontSize: 40,
-        },
         h2: {
           fontSize: 32,
         },

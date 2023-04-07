@@ -6,7 +6,7 @@ import { createTheme } from "@mui/material/styles";
 import { themeSettings } from "./theme";
 
 import Homepage from "./pages/Homepage";
-import Function from "./pages/function_generator";
+import CodeTranslator from"./pages/code_translator";
 
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
         
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/function_generator" element={<Function />} />
+          <Route path="/codetranslator" element={<CodeTranslator />} />
         </Routes>
 
       </ThemeProvider>

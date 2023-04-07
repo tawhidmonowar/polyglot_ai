@@ -1,54 +1,32 @@
 import React from "react";
-import { Grid, Paper, TextField, Select, MenuItem, Box, Typography, Card, Stack } from "@mui/material";
-import DescriptionRounded from "@mui/icons-material/DescriptionRounded";
-import { useNavigate } from "react-router-dom";
-import { useState } from 'react';
-import './style.css';
+import './style_homepage.css'; 
 
 const Homepage = () => {
 
   return (
-    <>
-      
-    </>
 
-
-    /*
-    <Box p={2}>
-      <Typography style={{ color: 'white' }}>
-        Function Genaretor
-      </Typography>
-      <Card onClick={() => navigate("/function_generator")}
-        sx={{
-          boxShadow: 2,
-          borderRadius: 5,
-          height: 190,
-          width: 200,
-          "&:hover": {
-            border: 2,
-            boxShadow: 0,
-            borderColor: "primary.dark",
-            cursor: "pointer",
-          },
-        }}
-      >
-        <DescriptionRounded
-          sx={{ fontSize: 80, color: "primary.main", mt: 2, ml: 2 }}
-        />
-        <Stack p={3} pt={0}>
-          <Typography fontWeight="bold" variant="h5">
-            TEXT SUMAMRY
-          </Typography>
-          <Typography variant="h6">
-            Summarize long text into short sentences
-          </Typography>
-        </Stack>
-      </Card>
-    </Box>
-
-      */
-
-
+    <div>
+      <a href="https://github.com/tawhidmonowar/polyglot_ai" className="github-icon">
+        <img src="https://img.icons8.com/ios/50/000000/github.png" alt="GitHub" />
+      </a>
+      <h1>Polyglot AI</h1>
+      <p>Experience the future of programming with AI-powered tools</p>
+      <div className="container">
+        <a href="http://localhost:3000/codetranslator">
+          <div className="box"><h3>AI Code Translator</h3>
+          <p>translate code instantly in multiple programming languages.</p></div>
+        </a>
+        <a href="http://www.example.com">
+          <div className="box">Coming soon...</div>
+        </a>
+        <a href="http://www.example.com">
+          <div className="box">Coming soon...</div>
+        </a>
+        <a href="http://www.example.com">
+          <div className="box">Coming soon...</div>
+        </a>
+      </div>
+    </div>
 
   );
 

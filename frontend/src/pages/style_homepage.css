@@ -1,0 +1,82 @@
+body {
+    background-color: #0e1117;
+  }
+  
+  .github-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  .github-icon img {
+    filter: invert(100%);
+  }
+  
+  /* Style for the boxes */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+  }
+  
+  .box {
+    background-color: #282a36;
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    text-align: left;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    color: #ccc;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .box p {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+  }
+
+  /* Responsive design */
+  @media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .box {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  /* Style for the heading and subheading */
+  h1 {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10px;
+    color: #ccc;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: blod;
+    color: #ccc;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
