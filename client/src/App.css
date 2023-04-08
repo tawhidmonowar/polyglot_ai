@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+body {
+  background-color: #202123;
+  padding: 1%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.root-div {
+  margin-top: 10vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.github-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.github-icon:hover {
+  transform: scale(1.05);
+}
+
+
+.github-icon img {
+  filter: invert(100%);
+}
+
+/* Style for the boxes */
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 360px;
 }
 
-.App-link {
-  color: #61dafb;
+.box {
+  background-color: #343541;
+  width: 240px;
+  height: 160px;
+  margin: 8px;
+  text-align: left;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  color: #ccc;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.box p {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+
+
+  p {
+    font-size: 15px !important;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container {
+    flex-direction: column;
+    height: auto;
   }
+
+  .box {
+    width: 200px;
+    height: 130px;
+  }
+
+}
+
+/* Style for the heading and subheading */
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ccc;
+  font-size: 32px;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: blod;
+  color: #ccc;
+}
+
+a {
+  text-decoration: none;
 }

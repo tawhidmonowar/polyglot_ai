@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import './normal.css';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div className="root-div">
+      <a href="https://github.com/tawhidmonowar/polyglot_ai" className="github-icon">
+        <img src="https://img.icons8.com/ios/50/000000/github.png" alt="GitHub" />
+      </a>
+      <h1>Polyglot AI</h1>
+      <p>Experience the future of programming with AI-powered tools</p>
+      <div className="container">
+        <a href="http://localhost:3000/codetranslator">
+          <div className="box"><h3>AI Code Translator</h3>
+          <p>translate code instantly in multiple programming languages.</p></div>
         </a>
-      </header>
+        <a href="http://www.example.com">
+          <div className="box">Coming soon...</div>
+        </a>
+        <a href="http://www.example.com">
+          <div className="box">Coming soon...</div>
+        </a>
+        <a href="http://www.example.com">
+          <div className="box">Coming soon...</div>
+        </a>
+      </div>
     </div>
   );
 }
