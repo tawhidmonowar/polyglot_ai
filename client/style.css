@@ -2,11 +2,9 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #0d1117;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -55,31 +53,121 @@ h1 {
   text-align: center;
 }
 
-/* Style for the boxes */
+select {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 8px;
+	font-size: 13px;
+	font-weight: 600;
+	border: 1px solid #1f2937;
+	border-radius: 8px;
+	background: #1f2937;
+	color: #ccc;
+}
+
+.CodeMirror {
+	font-size: 13px;
+}
+
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 360px;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.sub-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#input,
+#output {
+	color: #ccc;
+	text-align: center;
+}
+
+.btn-translate {
+	padding: 8px 16px;
+	border-radius: 5px;
+	background-color: #8b5cf6;
+	border: 1px solid #8b5cf6;
+	color: #ececec;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.btn-input-copy,
+.btn-output-copy {
+	position: absolute;
+	padding: 5px 5px;
+
+	background-color: #282a36;
+	border: 1px solid #282a36;
+	color: #ffffff;
+	cursor: pointer;
+	z-index: 100;
+}
+
+
+.left-section,
+.right-section {
+	flex: 1;
+	padding: 10px;
+	position: relative;
+	width: 50%;
+}
+
+
+.left-section label,
+.right-section label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.right-section #output-code {
+	background-color: #000000;
+}
+
+.boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10px;
 }
 
 .box {
-  background-color: #282a36;
-  width: 250px;
-  height: 200px;
-  margin: 10px;
-  text-align: center;
-  line-height: 200px;
-  font-size: 18px;
-  border-radius: 8px;
-  color: #ccc;
-  font-family: 'Open Sans', sans-serif;
-  transition: transform 0.3s ease;
+	flex-basis: 23%;
+	height: 100px;
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
 
+	margin-bottom: 20px;
 }
 
-.box:hover {
-  transform: scale(1.05);
-  transition: transform 0.05s ease;
+@media screen and (max-width: 767px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.left-section,
+	.right-section {
+		flex-basis: 100%;
+	}
+
+	.left-section select,
+	.right-section select,
+	.left-section textarea,
+	.right-section textarea {
+		font-size: 14px;
+	}
+
+	.box {
+		flex-basis: 100%;
+	}
 }
