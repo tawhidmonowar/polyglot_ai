@@ -1,56 +1,17 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #0d1117;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-.github-icon {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 9999;
-}
-
-.github-icon img {
-  filter: invert(100%);
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #535bf2;
+* {
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #0e1117;
+
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+	font-weight: bold;
 }
 
 select {
@@ -70,15 +31,33 @@ select {
 	font-size: 13px;
 }
 
+.github-icon {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 9999;
+  }
+
+  .github-icon img {
+	filter: invert(100%);
+  }
+
 .container {
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 20px;
+
 }
 
 .sub-container {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.title {
+	margin: 0 auto;
+	text-align: center;
+	color: #ccc;
 }
 
 #input,
