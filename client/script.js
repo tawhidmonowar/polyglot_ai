@@ -11,3 +11,5 @@ var outputEditor = CodeMirror.fromTextArea(document.getElementById("output-code"
 	readOnly: true,
 	cursorBlinkRate: 0
 });
+
+const input = document.querySelector();
