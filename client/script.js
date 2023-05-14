@@ -12,4 +12,32 @@ var outputEditor = CodeMirror.fromTextArea(document.getElementById("output-code"
 	cursorBlinkRate: 0
 });
 
-const input = document.querySelector();
+var btnTranslate = document.getElementById("btn-translate");
+
+const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const data = "editor.getValue();"
+
+    const response = await fetch('http://localhost:5000', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            prompt: data
+        })
+    })
+
+    if (response.ok) {
+        const data = await response.json();
+        const parsedData = data.bot.trim() // trims any trailing spaces/'\n' 
+
+        console.log(parsedData)
+    } else {
+        const err = await response.text()
+        alert(err)
+    }
+}
+
+btnTranslate.addEventListener('click', handleSubmit);

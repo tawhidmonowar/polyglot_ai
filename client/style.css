@@ -66,7 +66,7 @@ select {
 	text-align: center;
 }
 
-.btn-translate {
+#btn-translate {
 	padding: 8px 16px;
 	border-radius: 5px;
 	background-color: #8b5cf6;
