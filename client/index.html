@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Polyglot AI</title>
   <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/css/css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/htmlmixed/htmlmixed.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/dracula.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -26,22 +32,39 @@
       <img src="https://img.icons8.com/ios/50/000000/github.png" alt="GitHub">
     </a>
 
-    <div>
-      <h1>Polyglot AI</h1>
-      <p>Experience the future of programming with AI-powered tools</p>
-      <div class="container">
-        <a href="file:///H:/New%20folder/index.html">
-          <div class="box">AI Code Translator</div>
-        </a>
-        <a href="http://www.example.com">
-          <div class="box">Box 2</div>
-        </a>
-        <a href="http://www.example.com">
-          <div class="box">Box 3</div>
-        </a>
-        <a href="http://www.example.com">
-          <div class="box">Box 4</div>
-        </a>
+    <div class="title">
+      <h1><br>AI Code Translator</h1>
+      <button class="btn-translate">Translate</button>
+    </div>
+
+    <div class="container">
+      <div class="sub-container">
+        <div class="left-section">
+          <label id="input" for="input-language">Input</label>
+          <select id="input-language">
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+          </select>
+
+          <div style="position: relative;">
+            <textarea id="input-code" cols="50" placeholder="Enter your code here"></textarea>
+            <button class="btn-input-copy" style="position: absolute; top: 0; right: 0;">Copy</button>
+          </div>
+        </div>
+        <div class="right-section">
+          <label id="output" for="output-language">Output</label>
+          <select id="output-language">
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+          </select>
+
+          <div style="position: relative;">
+            <textarea id="output-code" placeholder="Output will be displayed here" readonly></textarea>
+            <button class="btn-output-copy" style="position: absolute; top: 0; right: 0;">Copy</button>
+          </div>
+        </div>
       </div>
     </div>
 
