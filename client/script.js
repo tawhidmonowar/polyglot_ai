@@ -1,45 +1,42 @@
-var editor = CodeMirror.fromTextArea(document.getElementById("input-code"), {
+var inputSelect = document.getElementById('input-language');
+
+var inputEditor = CodeMirror.fromTextArea(document.getElementById("input-code"), {
 	lineNumbers: true,
-	mode: "javascript",
+	mode: "text/x-java",
 	theme: "dracula" 
   });
 
 var outputEditor = CodeMirror.fromTextArea(document.getElementById("output-code"), {
 	lineNumbers: true,
-	mode: "python",
-	theme: "dracula",
-	readOnly: true,
-	cursorBlinkRate: 0
+	mode: "javascript",
+	theme: "dracula"
 });
+
+inputSelect.addEventListener('change', function() {
+    var selectedLanguage = inputSelect.value;
+    inputEditor.setOption('mode', 'text/x-'+selectedLanguage);
+    console.log("Input Language xx: " + selectedLanguage + "\n");
+});
+
+
+
+
+
 
 var btnTranslate = document.getElementById("btn-translate");
 
+
 const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    var inputSelect = document.getElementById('input-language');
+    var inputlanguage = inputSelect.options[inputSelect.selectedIndex].value;
+    console.log("Input Language: " + inputlanguage + "\n");
 
-    const data = editor.getValue();
+    var outputSelect = document.getElementById('output-language');
+    var outputlanguage = outputSelect.options[outputSelect.selectedIndex].value;
+    console.log("Output Language: " + outputlanguage);
 
-    const response = await fetch('http://localhost:5000', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            prompt: data
-        })
-    })
-
-    if (response.ok) {
-        const data = await response.json()
-        const parsedData = data.bot.trim()
-
-        outputEditor.value += parsedData;
-        console.log(parsedData)
-
-    } else {
-        const err = await response.text()
-        alert(err)
-    }
 }
 
 btnTranslate.addEventListener('click', handleSubmit);
