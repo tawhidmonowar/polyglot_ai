@@ -48,7 +48,7 @@ To convert a URL into a PDF file:
 Contributions are welcome! If you find any bugs or issues, please submit them in the issue tracker. If you would like to contribute code, please fork the repository and create a pull request.
 
 ## License
-Polyglot AI is licensed under the MIT License. See LICENSE for more details.
+Polyglot AI is licensed under the MIT License. See [LICENSE](https://github.com/tawhidmonowar/polyglot_ai/blob/main/LICENSE) for more details.
 
 ## Acknowledgements
 This project was built as part of my Web Programming course at [Metropolitan University](https://metrouni.edu.bd/). I would like to thank my instructor and classmates for their feedback and support. I would also like to thank OpenAI for providing ChatGPT’s API, which made this project possible.
