@@ -51,7 +51,7 @@ Contributions are welcome! If you find any bugs or issues, please submit them in
 Polyglot AI is licensed under the MIT License. See LICENSE for more details.
 
 ## Acknowledgements
-This project was built as part of my Web Programming course at [Metropolitan University] (https://metrouni.edu.bd/). I would like to thank my instructor and classmates for their feedback and support.
+This project was built as part of my Web Programming course at [Metropolitan University](https://metrouni.edu.bd/). I would like to thank my instructor and classmates for their feedback and support. I would also like to thank OpenAI for providing ChatGPT’s API, which made this project possible.
 
 ## Author
 * **Tawhid Monowar** - *Computer science student*
