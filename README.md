@@ -38,11 +38,13 @@ git clone https://github.com/tawhidmonowar/URLtoPDFConverter.git
 3. Build and run the project using Gradle
 
 ## Usage
-To convert a URL into a PDF file:
-1. Enter the URL in the input field
-2. Press the "Convert" button
-3. Wait for the conversion process to complete
-4. Save the PDF file to device storage
+To translate your code, follow these steps:
+
+1. Select the source and target languages from the dropdown menus.
+2. Paste or type your code in the left text area.
+3. Click the “Translate” button or press Ctrl+Enter to start the translation.
+4. Wait for a few seconds and see the translated code in the right text area.
+5. Copy or edit the translated code as you wish.
 
 ## Contributing
 Contributions are welcome! If you find any bugs or issues, please submit them in the issue tracker. If you would like to contribute code, please fork the repository and create a pull request.
