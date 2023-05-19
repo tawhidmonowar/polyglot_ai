@@ -17,16 +17,9 @@
 ![screenshot_profile](./screenshot/screenshot.png)
 
 ## Features
-- Convert any URL into a PDF file
-- Save PDF files to device storage or share with other apps
-- Simple and easy-to-use interface
-- Fast and reliable conversion process
-- Open-source and free to use
-
-## Prerequisites
-- Android Studio (Version 4.1 or later)
-- Gradle (Version 6.5 or later)
-- Java Development Kit (JDK) (Version 11 or later)
+- Supports multiple languages, such as Python, Java, JavaScript,and more.
+- Uses ChatGPT’s natural language processing and code generation capabilities to produce high-quality translations.
+- Provides a simple and intuitive user interface with syntax highlighting and code formatting.
 
 ## Installation
 To use Polyglot AI, you need to have Node.js and Vite installed on your machine. You also need an OpenAI API key to access ChatGPT’s service.
