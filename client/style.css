@@ -74,12 +74,12 @@ select {
 	border: 1px solid #8b5cf6;
 	color: #ececec;
 	cursor: pointer;
-	font-weight: bold;
+	
 	font-size: 15px;
 }
 
-.btn-input-copy,
-.btn-output-copy {
+#btn-input-copy,
+#btn-output-copy {
 	position: absolute;
 	padding: 5px 5px;
 
@@ -151,3 +151,45 @@ select {
 		flex-basis: 100%;
 	}
 }
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 140px;
+	height: 35px;
+	background-color: #8b5cf6;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -75px;
+	opacity: 0;
+	transition: opacity 0.3s;
+	display: flex; /* Added */
+	justify-content: center; /* Added */
+	align-items: center; /* Added */
+  }
+  
+  .tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #8b5cf6 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+  }
