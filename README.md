@@ -29,13 +29,15 @@
 - Java Development Kit (JDK) (Version 11 or later)
 
 ## Installation
+To use Polyglot AI, you need to have Node.js and Vite installed on your machine. You also need an OpenAI API key to access ChatGPT’s service.
 
-1. Clone the repository:
+1. Clone this repository or download the zip file.
 ```
-git clone https://github.com/tawhidmonowar/URLtoPDFConverter.git
+git clone https://github.com/tawhidmonowar/polyglot_ai.git
 ```
-2. Open the project in Android Studio
-3. Build and run the project using Gradle
+2. Navigate to the project folder and run npm install to install the dependencies.
+3. Create a .env file in the server directory and add your OpenAI API key as OPENAI_API_KEY= "your-key-here"
+4. Run npm run dev to start the development server.
 
 ## Usage
 To translate your code, follow these steps:
