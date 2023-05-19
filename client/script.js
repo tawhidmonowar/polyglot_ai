@@ -23,7 +23,9 @@ const handleSubmit = async (e) => {
     var inputCode = inputEditor.getValue();
     var final_prompt = "##### Translate this code from "+ inputlanguage + " into " + outputlanguage + "\n### "+ inputlanguage +"\n    \n    " + inputCode + "\n    \n### " + outputlanguage;
     console.log(final_prompt);
-    outputEditor.setValue(final_prompt);
+
+
+    typeCode(outputEditor,final_prompt);
 }
 
 btnTranslate.addEventListener('click', handleSubmit);
@@ -54,4 +56,19 @@ function outFunc() {
   tooltip.innerHTML = "Copy to clipboard";
   var tooltip = document.getElementById("input-tooltip");
   tooltip.innerHTML = "Copy to clipboard";
+}
+
+
+function typeCode(editor, text) {
+  editor.setValue("");
+  let index = 0;
+  let interval = setInterval(() => {
+    editor.focus();
+    if (index < text.length) {
+      editor.replaceRange(text.charAt(index), editor.getCursor());
+      index++;
+    } else {
+      clearInterval(interval);
+    }
+  }, 20);
 }
