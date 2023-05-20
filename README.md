@@ -4,7 +4,7 @@
   Polyglot AI is a code translator tool for programmers, built with ChatGPT’s advanced API. It allows you to convert your code from one programming language to another with just a few clicks.
     <br/>
     <br/>
-    <a href="https://github.com/tawhidmonowar/polyglot_ai/releases">Download</a>
+    <a href="#">Demo</a>
     .
     <a href="https://github.com/tawhidmonowar/polyglot_ai/issues">Report Bug</a>
     .
@@ -12,7 +12,7 @@
   </p>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/tawhidmonowar/polyglot_ai?color=dark-green) ![Forks](https://img.shields.io/github/forks/tawhidmonowar/polyglot_ai?style=social) ![Stargazers](https://img.shields.io/github/stars/tawhidmonowar/polyglot_ai?style=social) ![Issues](https://img.shields.io/github/issues/tawhidmonowar/polyglot_ai)
+![Contributors](https://img.shields.io/github/contributors/tawhidmonowar/polyglot_ai?color=dark-green) ![Forks](https://img.shields.io/github/forks/tawhidmonowar/polyglot_ai?style=social) ![Stargazers](https://img.shields.io/github/stars/tawhidmonowar/polyglot_ai?style=social) ![Issues](https://img.shields.io/github/issues/tawhidmonowar/polyglot_ai) ![Free Palestine](./client/public/FreePalestine.svg)
 
 ![screenshot_profile](./client/public/screenshot-polyglot-ai.png)
 
