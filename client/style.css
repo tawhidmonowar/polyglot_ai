@@ -82,9 +82,9 @@ select {
 #btn-output-copy {
 	position: absolute;
 	padding: 5px 5px;
-
 	background-color: #282a36;
 	border: 1px solid #282a36;
+	border-radius: 10px;
 	color: #ffffff;
 	cursor: pointer;
 	z-index: 100;
