@@ -4,7 +4,7 @@
   Polyglot AI is a code translator tool for programmers, built with ChatGPT’s advanced API. It allows you to convert your code from one programming language to another with just a few clicks.
     <br/>
     <br/>
-    <a href="https://github.com/tawhidmonowar/polyglot_ai/releases">Download</a>
+    <a href="#">Demo</a>
     .
     <a href="https://github.com/tawhidmonowar/polyglot_ai/issues">Report Bug</a>
     .
