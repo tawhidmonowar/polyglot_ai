@@ -14,7 +14,7 @@
 
 ![Contributors](https://img.shields.io/github/contributors/tawhidmonowar/polyglot_ai?color=dark-green) ![Forks](https://img.shields.io/github/forks/tawhidmonowar/polyglot_ai?style=social) ![Stargazers](https://img.shields.io/github/stars/tawhidmonowar/polyglot_ai?style=social) ![Issues](https://img.shields.io/github/issues/tawhidmonowar/polyglot_ai) ![Free Palestine](./client/public/FreePalestine.svg)
 
-![screenshot_profile](./client/public/screenshot-polyglot-ai.png)
+![screenshot_profile](./client/public/polyglot-ai.gif)
 
 ## Features
 - Supports multiple languages, such as Python, Java, JavaScript,and more.
