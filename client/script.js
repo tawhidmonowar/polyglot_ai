@@ -5,27 +5,55 @@ var inputCopy = document.getElementById('btn-input-copy');
 var outputCopy = document.getElementById('btn-output-copy');
 
 var inputEditor = CodeMirror.fromTextArea(document.getElementById("input-code"), {
-	lineNumbers: true,
-	theme: "dracula" 
-  });
+  lineNumbers: true,
+  theme: "dracula"
+});
 
 var outputEditor = CodeMirror.fromTextArea(document.getElementById("output-code"), {
-	lineNumbers: true,
-	theme: "dracula"
+  lineNumbers: true,
+  theme: "dracula"
 });
 
 
+
 const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    var inputlanguage = inputSelect.value;
-    var outputlanguage = outputSelect.value;
-    var inputCode = inputEditor.getValue();
-    var final_prompt = "##### Translate this code from "+ inputlanguage + " into " + outputlanguage + "\n### "+ inputlanguage +"\n    \n    " + inputCode + "\n    \n### " + outputlanguage;
-    console.log(final_prompt);
+  loader(outputEditor);
+
+  var inputlanguage = inputSelect.value;
+  var outputlanguage = outputSelect.value;
+  var inputCode = inputEditor.getValue();
+  var final_prompt = "##### Translate this code from " + inputlanguage + " into " + outputlanguage + "\n### " + inputlanguage + "\n    \n    " + inputCode + "\n    \n### " + outputlanguage;
+  //console.log(final_prompt);
+
+  const response = await fetch('http://localhost:5000/', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      prompt: final_prompt
+    })
+  })
+
+  if (response.ok) {
+
+    const data = await response.json();
+    const parsedData = data.bot.trim() // trims any trailing spaces/'\n' 
+    clearInterval(loadInterval);
+    outputEditor.setValue("");
+    typeCode(outputEditor, parsedData);
+
+  } else {
+    const err = await response.text()
+    clearInterval(loadInterval);
+    outputEditor.setValue("");
+    typeCode(outputEditor, "Something went wrong. " + err);
+  }
 
 
-    typeCode(outputEditor,final_prompt);
+
 }
 
 btnTranslate.addEventListener('click', handleSubmit);
@@ -58,7 +86,6 @@ function outFunc() {
   tooltip.innerHTML = "Copy to clipboard";
 }
 
-
 function typeCode(editor, text) {
   editor.setValue("");
   let index = 0;
@@ -67,8 +94,22 @@ function typeCode(editor, text) {
     if (index < text.length) {
       editor.replaceRange(text.charAt(index), editor.getCursor());
       index++;
+      const cursorPos = editor.getCursor();
+      editor.scrollIntoView(cursorPos, 100);
     } else {
       clearInterval(interval);
     }
   }, 20);
+}
+
+let loadInterval
+function loader(editor) {
+  let loadingText = '';
+  loadInterval = setInterval(() => {
+    loadingText += '.';
+    if (loadingText === '....') {
+      loadingText = '';
+    }
+    editor.setValue(loadingText);
+  }, 300);
 }
