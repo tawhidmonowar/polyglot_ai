@@ -46,10 +46,11 @@ const handleSubmit = async (e) => {
     typeCode(outputEditor, parsedData);
 
   } else {
-    const err = await response.text()
+    const err = await response.text();
     clearInterval(loadInterval);
     outputEditor.setValue("");
-    typeCode(outputEditor, "Something went wrong. " + err);
+    typeCode(outputEditor, "Something went wrong. ");
+    console.log(err);
   }
 
 
