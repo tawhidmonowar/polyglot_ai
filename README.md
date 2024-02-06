@@ -51,9 +51,3 @@ This project was built as part of my Web Programming course at [Metropolitan Uni
 
 ## Author
 * **Tawhid Monowar** - *Computer science student*
-
-## Save Palestine
-Stand up for Palestine's existence! It is disappearing from Maps, let us raise our voices and demand a fair representation for this land and its people.
-[Don't watch this video!](https://youtu.be/O5fbyEV36pU)
-
-<img src="https://github.com/tawhidmonowar/URLtoPDFConverter/blob/main/screenshot/save_palestine.jpeg" width="600" alt="save_palestine">
